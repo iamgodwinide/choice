@@ -16,14 +16,16 @@ const styleBoxes = () => {
 
 }
 
-if (window.innerWidth > 400) {
-    $(document).ready(function (e) {
-        $("img[usemap]").rwdImageMaps();
-    });
-    setTimeout(() => {
-        styleBoxes();
-    }, 2000)
-}
+setInterval(() => {
+    if (window.innerWidth > 400) {
+        $(document).ready(function (e) {
+            $("img[usemap]").rwdImageMaps();
+        });
+        setTimeout(() => {
+            styleBoxes();
+        }, 2000)
+    }
+}, 1000)
 
 
 
