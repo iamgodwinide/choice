@@ -6,7 +6,7 @@ import dResponse from './dildo.js'
 
 const genLink = (tweet) => {
     return `
-https://twitter.com/intent/tweet?url=http://www.choice.domain&hashtags=choice&text=${tweet}
+https://twitter.com/intent/tweet?url=https://choiceonsolana.wtf&hashtags=choice&text=${tweet}
 `
 }
 
