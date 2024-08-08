@@ -88,7 +88,7 @@ img {
 
 .box::before {
     content: "";
-    background-image: conic-gradient(#fdf7fca4 20deg,
+    background-image: conic-gradient(#e60cc2a4 20deg,
             transparent 120deg);
     width: 150%;
     height: 200%;
@@ -96,7 +96,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    animation: rotate 2s linear infinite;
+    animation: rotate .9s linear infinite;
     animation-timing-function: ease-in-out;
 }
 
@@ -104,12 +104,12 @@ img {
 @keyframes rotate {
     0% {
         /* transform: rotate(0deg); */
-        transform: translateX(-300px);
+        transform: translateX(-200px);
     }
 
     100% {
         /* transform: rotate(-360deg); */
-        transform: translateX(300px);
+        transform: translateX(200px);
     }
 }
 

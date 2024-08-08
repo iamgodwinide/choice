@@ -16,9 +16,25 @@ const styleBoxes = () => {
 
 }
 
-setTimeout(() => {
-    styleBoxes();
-}, 2000)
+if (window.innerWidth > 400) {
+    $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+    });
+    setTimeout(() => {
+        styleBoxes();
+    }, 2000)
+}
 
 
-window.addEventListener("resize", () => window.location.reload())
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 400) {
+        $(document).ready(function (e) {
+            $("img[usemap]").rwdImageMaps();
+        });
+        setTimeout(() => {
+            styleBoxes();
+        }, 2000)
+    }
+});
+
