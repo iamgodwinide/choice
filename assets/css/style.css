@@ -84,7 +84,7 @@ img {
     cursor: pointer;
     overflow: hidden;
     pointer-events: none;
-    border: .5px solid #fff;
+    border: .5px solid #e60cc2a4;
 }
 
 .box::before {
